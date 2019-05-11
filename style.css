@@ -58,7 +58,7 @@ body{
 #header{
 grid-column: 1/ -1;
 grid-row: 1 / 3;
-background:url(/img/baner.jpg)no-repeat center center;
+background:url(img/baner.jpg)no-repeat center center;
 background-size: cover;
 background-attachment: fixed;
 display: grid;
