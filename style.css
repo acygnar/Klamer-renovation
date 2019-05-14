@@ -110,7 +110,8 @@ grid-template-rows: repeat(3,1fr);
     grid-row: 3 / 4;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 650px 650px 650px;
+    grid-template-rows: 650px 1100px 650px;
+    background-color: #f7f5ed;
 }
 .about{
     grid-column: 1 / -1;
@@ -147,6 +148,15 @@ grid-template-rows: repeat(3,1fr);
 .services{
     grid-column: 1 / -1;
     grid-row: 2 / 3;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: minmax(80px,auto) repeat(5,1fr);
+}
+.tabs__content{
+    display: none;
+}
+.tabs__content.active{
+    display: grid;
 }
 .contact{
     grid-column: 1 / -1;
