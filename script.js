@@ -1,6 +1,6 @@
-var tabLinks = document.querySelectorAll(".tabs__item");
+var tabBtn = document.querySelectorAll(".tabs__item");
 var tabContent = document.querySelectorAll(".tabs__content");
-tabLinks.forEach(function(e) {
+tabBtn.forEach(function(e) {
    e.addEventListener("click", openTabs);
 });
 function openTabs(e) {
@@ -9,9 +9,9 @@ function openTabs(e) {
     tabContent.forEach(function(e) {
       e.classList.remove("active");
    });
-    tabLinks.forEach(function(e) {
+    tabBtn.forEach(function(e) {
       e.classList.remove("active");
    });
     document.querySelector("#" + dataName).classList.add("active");
-    btnTarget.classList.add("active");
+    btn.classList.add("active");
 }

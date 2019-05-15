@@ -150,7 +150,60 @@ grid-template-rows: repeat(3,1fr);
     grid-row: 2 / 3;
     display: grid;
     grid-template-columns: repeat(4,1fr);
-    grid-template-rows: minmax(80px,auto) repeat(5,1fr);
+    grid-template-rows: minmax(70px,auto) repeat(5,1fr);
+}
+.services__tabs{
+    grid-column: 1 / -1;
+    grid-row: 1;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: minmax(70px,auto);
+    background-color: #262829;
+}
+.tabs__item{
+    align-self: center;
+    justify-self: center;
+}
+.services__btn{
+    position: relative;
+    border: none;
+    outline: none;
+    background: transparent;
+    height:70px;
+    color: #ddd;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.services__btn:hover{
+    color:#fff;
+}
+.services__btn:hover::before{
+    width: 100%;
+}
+.services__btn:hover::after{
+    width: 100%;
+}
+.services__btn::before{
+    content: "";
+    position: absolute;
+    left:0;
+    top:0;
+    height: 2px;
+    background-color: red;
+    width:0;
+    transition:0.5s;
+}
+.services__btn::after{
+    content: "";
+    position: absolute;
+    left:0;
+    bottom:0;
+    height: 2px;
+    background-color: red;
+    width:0;
+    transition:0.5s;
 }
 .tabs__content{
     display: none;
