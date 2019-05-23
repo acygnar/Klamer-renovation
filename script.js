@@ -15,3 +15,15 @@ function openTabs(e) {
     document.querySelector("#" + dataName).classList.add("active");
     btn.classList.add("active");
 }
+
+var galleryItems = document.querySelectorAll(".tabs__image");
+var galleryElements = document.querySelectorAll(".image__text");
+
+galleryItems.forEach(function(e){
+   e.addEventListener("click", addHover);
+});
+
+function addHover(){
+   galleryItems.forEach(galleryItem => galleryItem.classList.remove("over"));
+   galleryItems.forEach(() =>this.classList.add("over"));
+}
