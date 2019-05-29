@@ -16,7 +16,7 @@
 body{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 85px 100vh auto minmax(40px,auto);
+    grid-template-rows: 85px 100vh auto 40px;
     line-height: 1.6;
 }
 .nav{
@@ -294,8 +294,6 @@ grid-row: 1 / 2;
 #contact{
     grid-column: 1 / -1;
     grid-row: 3 / 4;
-    background: url()no-repeat center center;
-    background-size: cover;
     background-color: #171717;
     color:#fff;
     display: grid;
@@ -432,6 +430,26 @@ font-size: 35px;
     .header__title{
         text-align: center;
     }
+}
+@media(max-width:792px){
+    #contact{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .contact__item--phone{
+        grid-column: 1 / -1;
+        grid-row: 2 / 3;
+    }
+    .contact__item--email{
+        grid-column: 1 / -1;
+        grid-row: 3 / 4;
+    }
+    .contact__item--spacer{
+        grid-row: 4 / 5;
+        align-self: start;
+    }
+    .contact__item--social{
+        grid-column: 1 / -1;
+        grid-row: 4 / 5;
 }
 @media(max-width:578px){
     .tabs__title,.description__title{
