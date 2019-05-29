@@ -1,8 +1,6 @@
 var tabBtn = document.querySelectorAll(".tabs__item");
 var tabContent = document.querySelectorAll(".tabs__content");
-tabBtn.forEach(function(e) {
-   e.addEventListener("click", openTabs);
-});
+
 function openTabs(e) {
    var btn = e.currentTarget;
    var dataName = btn.dataset.tab;
@@ -16,14 +14,31 @@ function openTabs(e) {
     btn.classList.add("active");
 }
 
+tabBtn.forEach(function(e) {
+   e.addEventListener("click", openTabs);
+});
+
 var galleryItems = document.querySelectorAll(".tabs__image");
 var galleryElements = document.querySelectorAll(".image__text");
-
-galleryItems.forEach(function(e){
-   e.addEventListener("click", addHover);
-});
 
 function addHover(){
    galleryItems.forEach(galleryItem => galleryItem.classList.remove("over"));
    galleryItems.forEach(() =>this.classList.add("over"));
+};
+function removeHover(){
+   galleryItems.forEach(galleryItem => galleryItem.classList.remove("over"));
+};
+
+galleryItems.forEach(function(e){
+   e.addEventListener("mouseover", addHover);
+   e.addEventListener("mouseleave", removeHover);
+});
+
+var burger = document.querySelector(".nav__mobile-burger");
+var burgerItems = document.querySelectorAll(".burger__item");
+
+function activeBurger(){
+   burgerItems.forEach(burgerItem => burgerItem.classList.toggle("active"));
 }
+burger.addEventListener("click", activeBurger);
+
