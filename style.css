@@ -16,7 +16,7 @@
 body{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: minmax(85px,auto) 100vh auto minmax(40px,auto);
+    grid-template-rows: 85px 100vh auto minmax(40px,auto);
     line-height: 1.6;
 }
 .nav{
@@ -35,7 +35,7 @@ body{
 .nav__list{
     display: grid;
     grid-template-columns: repeat(6,1fr);
-    grid-template-rows: minmax(85px,auto); 
+    grid-template-rows: 85px; 
 }
 .nav__item-logo{
     color: #7b7b7b;
@@ -443,18 +443,6 @@ font-size: 35px;
         font-size: 35px;
     }
 }
-@media (max-width:482px){
-    body{
-        grid-template-columns: 1fr;
-    }
-    #contact{
-        grid-template-columns: 1fr 1fr;
-    }
-    .contact__item--social{
-        grid-column: 1 / 3;
-    }
-}
-
 @media(max-width:750px){
     .nav__list{
         display: none;
