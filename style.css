@@ -18,6 +18,8 @@ body{
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 85px 100vh auto 40px;
     line-height: 1.6;
+    max-width:1482px;
+    margin: 0 auto;
 }
 .nav{
     display: grid;
@@ -450,7 +452,19 @@ font-size: 35px;
     .contact__item--social{
         grid-column: 1 / -1;
         grid-row: 4 / 5;
-}
+    }
+    .item__title{
+        justify-self: center;
+    }
+    .item__ico{
+        grid-column: 2 / 3;
+    }
+    .item__text{
+        justify-self: center;
+    }
+    .contact__item--email .item__text{
+        padding-left:20px;
+    }
 @media(max-width:578px){
     .tabs__title,.description__title{
         font-size: 35px;
