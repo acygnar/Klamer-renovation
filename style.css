@@ -169,10 +169,12 @@ grid-template-rows: repeat(3,1fr);
     align-self: center;
     justify-self: center;
 }
+.tabs__btn.mobile{
+    display: none;
+}
 .tabs__btn{
     position: relative;
     border: none;
-    /*outline: none;  negatywnie wpływa na dostępność*/
     background: transparent;
     height:70px;
     color: #ddd;
@@ -445,7 +447,7 @@ font-size: 35px;
         padding: 5% 5% 5% 5%;
     }
     .description__title{
-        grid-column: 1 ;
+        grid-column: 1 / 3;
         grid-row: 1 / 2;
     }
     .description__text{
@@ -509,6 +511,15 @@ font-size: 35px;
 @media(max-width:514px){
     .header__title{
         font-size: 35px;
+    }
+}
+@media(max-width:454px){
+    .tabs__btn.mobile{
+        display: block;
+        width: 50px;
+    }
+    .tabs__btn{
+        display: none;
     }
 }
 @media(max-width:750px){
