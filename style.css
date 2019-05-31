@@ -518,6 +518,9 @@ font-size: 35px;
         display: block;
         width: 50px;
     }
+    .tabs__btn.mobile i{
+        font-size: 35px;
+    }
     .tabs__btn{
         display: none;
     }
@@ -529,6 +532,49 @@ font-size: 35px;
     .nav{
         grid-template-rows: 1fr;
         grid-template-columns: repeat(4,1fr);
+        transition:2s;
+    }
+    body{
+        transition:2s;
+    }
+    body.active{
+        grid-template-rows: minmax(85px,auto) 100vh auto 40px;
+    }
+    .nav__list-mobile{
+        transition:2s;
+    }
+    .nav__list-mobile.active{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        grid-template-rows: repeat(4,1fr);
+        grid-column: 1 / -1;
+        grid-row: 1 / -1;
+    }
+    .nav__item-mobile:nth-of-type(1){
+        grid-row:2 / 3;
+        grid-column: 2 / 4;
+        align-self: center;
+        justify-self: center;
+    }
+    .nav__item-mobile:nth-of-type(2){
+        grid-row:3 / 4;
+        grid-column: 2 / 4;
+        align-self: center;
+        justify-self: center;
+    }
+    .nav__item-mobile:nth-of-type(3){        
+        grid-row: 4 / 5;
+        grid-column: 2 / 4;
+        align-self: center;
+        justify-self: center;
+    }
+    .nav.active{
+        grid-template-rows: repeat(4,1fr)
+    }
+    .nav__item-mobile a{
+        font-size: 1.1rem;
+        font-weight: 700;
+        color:#7b7b7b;
     }
     .nav__mobile-logo{
         display: grid;
@@ -549,6 +595,7 @@ font-size: 35px;
         height: 25px;
         width: 40px;
         cursor: pointer;
+        z-index: 999;
     }
     .burger__item{
         background-color:#7b7b7b;;
@@ -581,4 +628,5 @@ font-size: 35px;
         transform: translateX(50%);
     }
 
+}
 }

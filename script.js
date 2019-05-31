@@ -36,9 +36,14 @@ galleryItems.forEach(function(e){
 
 var burger = document.querySelector(".nav__mobile-burger");
 var burgerItems = document.querySelectorAll(".burger__item");
-
+var bd = document.querySelector("body");
+var navBar= document.querySelector(".nav")
+var mobileList=document.querySelector(".nav__list-mobile")
 function activeBurger(){
    burgerItems.forEach(burgerItem => burgerItem.classList.toggle("active"));
+   bd.classList.toggle("active");
+   navBar.classList.toggle("active");
+   mobileList.classList.toggle("active");
 }
 burger.addEventListener("click", activeBurger);
 
