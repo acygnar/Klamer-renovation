@@ -30,6 +30,7 @@ body{
     background-color: #000000bf;
     text-transform: uppercase; 
     z-index: 999;
+    height: 85px;
 }
 .nav__list-mobile, .nav__mobile-logo,.nav__mobile-burger{
     display:none;
@@ -568,16 +569,10 @@ font-size: 35px;
     .nav{
         grid-template-rows: 1fr;
         grid-template-columns: repeat(4,1fr);
-        transition:2s;
-    }
-    body{
-        transition: height 2s;
+        transition:0.5s linear;
     }
     body.active{
         grid-template-rows: 425px 100vh auto 40px;
-    }
-    .nav__list-mobile{
-        transition:2s;
     }
     .nav__list-mobile.active{
         display: grid;
@@ -605,7 +600,8 @@ font-size: 35px;
         justify-self: center;
     }
     .nav.active{
-        grid-template-rows: repeat(4,1fr)
+        grid-template-rows: repeat(4,1fr);
+        height:425px;
     }
     .nav__item-mobile a{
         font-size: 1.1rem;
