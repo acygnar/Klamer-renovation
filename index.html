@@ -15,12 +15,12 @@
 <body>
     <nav class="nav">
         <ul class="nav__list">
-            <li class="nav__item-logo center"><span>Klamer</br>renovation</span></li>
+            <li class="nav__item-logo center"><img src="img/logo_50.png" alt=""></li>
             <li class="nav__item center"><a href="#about">O nas</a></li>
             <li class="nav__item center"><a href="#services">Usługi</a></li>
             <li class="nav__item center"><a href="#contact">Kontakt</a></li>
         </ul>
-        <span class="nav__mobile-logo">Klamer</br>renovation</span>
+        <div class="nav__mobile-logo"><img src="img/logo_75.png" alt=""></div>
         <div class="nav__mobile-burger">
             <span class="burger__item"></span>
             <span class="burger__item"></span>
@@ -33,28 +33,35 @@
         </ul>
     </nav>
     <header id="header">
-        <h1 class="header__title center">Klamer renovation</h1>
-        <p class="header__text center">Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium
-            doloremque laudantium.</p>
+        <div class="header__title center"><img src="img/logo.png" alt=""></div>
     </header>
     <div class="main">
         <section id="about">
             <div class="about__description">
                 <h1 class="description__title">O nas</h1>
-                <p class="description__text">Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium
-                    doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis et quasi
-                    architecto beatae vitae dicta sunt, explicabo. Nemo enim ipsam voluptatem, quia voluptas sit,
-                    aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos, qui ratione voluptatem sequi
-                    nesciunt, neque porro quisquam est.</p>
+                <p class="description__text">Renovation Materials Support to młoda firma na rynku budowlanym, która swoimi metodami pracy, etyką oraz wdrażaniem nowych, wydajniejszych technologii ma na celu polepszenie usług remontowo-budowlanych w województwach śląskim i opolskim.Zespół firmy to młodzi inżynierowie oraz fachowcy z kilkudziesięcioletnim doświadczeniem, którzy opierają swoją prace na wzajemnym zaufaniu, wymianie wiedzy i doświadczenia oraz wysokiej kulturze pracy. Oczywiście mając świadomość swoich obowiązków, nie boją się ciężkiej pracy, potrafią zakasać rękawy i wykonać sumiennie powierzone zlecenie.</br> 
+                    
+                    
+                    W pracy liczy się jedynie jakość i staranność powierzonego zadania oraz terminowość.</br> 
+                    
+                    W kontaktach z klientem kładziemy nacisk na to aby wszystko było jasne, klarowne i zrozumiałe dla obu stron, aby klient dokładnie wiedział co i jak będzie wykonywane. 
+                    Żadnego obijania w bawełnę, niedomówień czy domysłów. Zawsze konsultujemy się także w sprawach, które wynikły nieoczekiwanie, zero samowolki i działania na własną rękę. 
+                    Jasne zasady od początku do końca współpracy.</br> 
+                    
+                    Mamy również świadomość, że w XXI wieku nie da się być "Firmą Renesansu" i znać na wszystkim, dlatego jeżeli na czymś się nie znamy to mówimy to otwarcie i szukamy zaufanych podwykonawców, którzy znają dany obszar i mogą wykonać zadanie z równie dużą dbałością o szczegóły.</br>
+                    
+                    
+                    Rozpoczęliśmy działalność w 2019 roku i możemy z dumą powiedzieć, że już mamy zadowolonych klientów i ręce pełne pracy.</br> 
+                    
+                    Zapraszamy do kontaktu!</p>
             </div>
             <img class="about__img" src="img/about.jpg" alt="">
         </section>
         <section id="services">
             <ul class="services__tabs">
-                <li class="tabs__item active" data-tab="building"><button class="tabs__btn">Budujesz</button><button class="tabs__btn mobile"><i class="fas fa-home"></i></button></li>
-                <li class="tabs__item " data-tab="renovating"><button class="tabs__btn">Remontujesz</button><button class="tabs__btn mobile"><i class="fas fa-tools"></i></button></li>
-                <li class="tabs__item" data-tab="moveout"><button class="tabs__btn">Przeprowadzasz</button><button class="tabs__btn mobile"><i class="fas fa-truck-moving"></i></button></li>
-                <li class="tabs__item" data-tab="clean"><button class="tabs__btn">Sprzątanie</button><button class="tabs__btn mobile"><i class="fas fa-broom"></i></button></li>
+                <li class="tabs__item active" data-tab="building"><button class="tabs__btn">Usługi</button><button class="tabs__btn mobile"><i class="fas fa-tasks"></i></button></li>
+                <li class="tabs__item " data-tab="renovating"><button class="tabs__btn">Relizacje</button><button class="tabs__btn mobile"><i class="fas fa-tools"></i></button></li>
+                <li class="tabs__item" data-tab="moveout"><button class="tabs__btn">Zasięg</button><button class="tabs__btn mobile"><i class="fas fa-truck-moving"></i></button></li>
             </ul>
             <div id="building" class="tabs__content active">
                 <figure class="tabs__image">
@@ -93,34 +100,57 @@
                         <p>Krótki opis obrazka 1</p>
                     </figcaption>
                 </figure>
-                <h1 class="tabs__title">Budujesz</h1>
-                <p class="tabs__description">Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium
-                    doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis et quasi
-                    architecto beatae vitae dicta sunt, explicabo. Nemo enim ipsam voluptatem, quia voluptas sit,
-                    aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos, qui ratione voluptatem sequi
-                    nesciunt, neque porro quisquam est.</p>
-                <p class="tabs__description--price">Cena 1100 - 1500zł</p>
+                <h1 class="tabs__title">Usługi</h1>
+                <div class="tabs__description">
+                    <ol>
+                    <li>Stolarka zewnętrzna i wewnętrzna</li>
+                    <li>Ciepły montaż</li>
+                    <li>Montaż rolet elewacyjnych i stolarki przeciwpożarowej</li>
+                    <li>Zabudowa kominków i adaptacja poddaszy</li>
+                    <li>Malowanie</li>
+                    <li>Nakładanie gładzi</li>
+                    <li>Układanie paneli, płytek, a także licówek</li>
+                    <li>Ściany działowe, montaż płyt G-K</li>
+                    <li>Sufity podwieszane</li>
+                    <li>Osadzanie i montaż płotów, ogrodzeń</li>
+                    <li>Wyrównywanie ścian, posadzek</li>
+                    <li>Podpinanie instalacji elektrycznych na podstawie projektu</li>
+                    <li>Podpinanie sanitarki</li>
+                    <li>Beton architektoniczny</li>
+                    </ol>
+                    </div>
+                
             </div>
             <div id="renovating" class="tabs__content">
-                remontuje
+                    Do każdego zlecenia podchodzimy indywidualnie. Zawsze przed wykonaniem projektu ustalamy z klientem podstawowe informacje takie jak:�
+                    - Datę realizacji
+                    - Dobór materiałów
+                    - Czastrwaniapracremontowych
+                    Przy projektach specjalnych zawsze proponujemy kilka rozwiązań z naciskiem na występujące trudności oraz niespodzianki. �
+                    �
+                    Dla nas najważniejszy jest zadowolony klient!
+                    
             </div>
             <div id="moveout" class="tabs__content">
-                przeprowadzam
+                    Nasze usługi oferujemy w województwach Śląskim i Opolskim. Jednakże jesteśmy otwarci na zlecenia spoza wymienionych województw. Wszystkie zlecenia są traktowane przez nas indywidualnie.�
+                    �
+                    Tekst, tekst, tekst, tekst
+                    Dalej nie jesteś przekonany do naszych usług? Skontaktuj się z nami telefonicznie w celu rozwiania wątpliwości lub napisz do nas na skrzynkę mailową z dokładnym opisem zlecenia.
             </div>
-            <div id="clean" class="tabs__content">
-                sprzatam
-            </div>
+            
         </section>
         <section id="contact">
             <div class="contact__item contact__item--phone">
                 <h3 class="item__title">Zadzwoń do nas:</h3>
                 <i class="item__ico fas fa-mobile-alt"></i>
-                <a class="item__text" href="tel:+48 123456789">+48 123-456-789</a>
+                <a class="item__text" href="tel:+48 570222116">+48 570-222-116</a>
+                <a class="item__text" href="tel:+48 570222117">+48 570-222-117</a>
             </div>
             <div class="contact__item contact__item--email">
                 <h3 class="item__title">Napisz do nas:</h3>
                 <i class="item__ico far fa-envelope"></i>
-                <a class="item__text" href="mailto:klamer@gmail.com">klamer@gmail.com</a>
+                <a class="item__text" href="mailto:klamer@gmail.com">kamil.michalik.rms@gmail.com</a>
+                <a class="item__text" href="mailto:klamer@gmail.com">rafal.janik.rms@gmail.com</a>
             </div>
             <div class="contact__item--spacer"></div>
             <div class="contact__item--social">
